@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'maxangularproject';
+  loadedNavOption = 'recipe';
+
+  onNavigate(navOption: string) {
+    this.loadedNavOption = navOption;
+  }
 }
