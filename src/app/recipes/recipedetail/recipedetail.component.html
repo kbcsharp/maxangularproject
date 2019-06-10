@@ -1,6 +1,11 @@
 <div class="row">
   <div class="col-xs-12">
-    <img style="max-height: 300px;" [src]="recipe.imagePath" alt="{{ recipe.name }}"class="img-responsive" />
+    <img
+      style="max-height: 300px;"
+      [src]="recipe.imagePath"
+      alt="{{ recipe.name }}"
+      class="img-responsive"
+    />
   </div>
 </div>
 <div class="row">
@@ -11,10 +16,14 @@
 <div class="row">
   <div class="col-xs-12">
     <div class="btn-group">
-      <button type="button" class="btn btn-primary dropdown-toggle">
+      <button
+        type="button"
+        class="btn btn-primary dropdown-toggle show"
+        (click)="dropdownShow()"
+      >
         Manage Recipe
       </button>
-      <ul class="dropdown-menu">
+      <ul class="dropdown-menu" [ngClass]="{ show: shouldShow }">
         <li class="dropdown-item"><a href="#">Shopping List +</a></li>
         <li class="dropdown-item"><a href="#">Edit Recipe</a></li>
         <li class="dropdown-item"><a href="#">Delete Recipe</a></li>
