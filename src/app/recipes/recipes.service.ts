@@ -13,14 +13,14 @@ export class RecipesService {
 
   private recipes: Recipe[] = [
     new Recipe(
-      "Test Recipe #1",
-      "This is a test recipe",
+      "Test Recipe #0",
+      "Meat and Fries",
       "https://cdn.pixabay.com/photo/2018/07/04/19/51/roasted-chickpeas-3516806_960_720.jpg",
       [new Ingredient("Meat", 1), new Ingredient("French Fries", 2)]
     ),
     new Recipe(
-      "Test Recipe #2",
-      "This is a test recipe",
+      "Test Recipe #1",
+      "Buns with Meast",
       "https://cdn.pixabay.com/photo/2018/07/04/19/51/roasted-chickpeas-3516806_960_720.jpg",
       [new Ingredient("Buns", 2), new Ingredient("Meat", 1)]
     )
