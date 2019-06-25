@@ -1,19 +1,19 @@
 <a
-      style="text-decoration: none;"
-      href="#"
-      class="list-group-item d-flex flex-row text-dark bg-light"
-      (click)="onSelected()"
-    >
-      <div class="mr-2">
-        <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
-        <p class="list-group-item-text">{{ recipe.description }}</p>
-      </div>
-      <span class="ml-2">
-        <img
-          [src]="recipe.imagePath"
-          alt="{{ recipe.name }}"
-          class="img-responsive"
-          style="max-height: 50px;"
-        />
-      </span>
-    </a>
+  style="text-decoration: none; cursor: pointer;"
+  class="list-group-item d-flex flex-row text-dark bg-light"
+  [routerLink]="[index]"
+  routerLinkActive="active"
+>
+  <div class="mr-2">
+    <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+    <p class="list-group-item-text">{{ recipe.description }}</p>
+  </div>
+  <span class="ml-2">
+    <img
+      [src]="recipe.imagePath"
+      alt="{{ recipe.name }}"
+      class="img-responsive"
+      style="max-height: 50px;"
+    />
+  </span>
+</a>
